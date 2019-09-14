@@ -200,6 +200,74 @@ body
 	padding: 0 24px;
 	background:#2ecc71;
 }
+#alertCanvas
+{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	top: 0;
+	left: 0;
+	overflow:hidden;
+	color:#2c3e50;
+	text-align: left;
+	font-family: VT323;
+	font-size: 24px;
+}
+.alertText
+{
+	height:36px;
+	line-height: 36px;
+	padding: 0 24px;
+	display: inline-block;
+	background:white;
+
+	animation-name:alertIn;
+	animation-duration:0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+.alertStyle
+{
+	display: inline-block;
+	animation-name:alertIn;
+	animation-duration:0.5s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+#announcementCanvas
+{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	top: 0;
+	left: 0;
+	overflow:hidden;
+	color:#2c3e50;
+	text-align: right;
+	font-family: VT323;
+	font-size: 24px;
+}
+.announcementText
+{
+	height:36px;
+	line-height: 36px;
+	padding: 0 24px;
+	display: inline-block;
+	background:white;
+
+	animation-name:alertIn;
+	animation-duration:0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+.announcementStyle
+{
+	display: inline-block;
+	animation-name:alertIn;
+	animation-duration:0.5s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
 
 @keyframes fadeIn
 {
@@ -217,6 +285,18 @@ body
     from
 	{
 		transform: scale(0.9, 0.9);
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
+@keyframes alertIn
+{
+    from
+	{
+		transform: translateY(-12px);
 		filter:opacity(0);
 	}
 	to

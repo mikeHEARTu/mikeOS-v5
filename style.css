@@ -208,6 +208,8 @@ body
 	top: 0;
 	left: 0;
 	overflow:hidden;
+	white-space: nowrap; 
+	text-overflow: ellipsis;
 	color:#2c3e50;
 	text-align: left;
 	font-family: VT323;
@@ -223,7 +225,7 @@ body
 
 	animation-name:alertIn;
 	animation-duration:0.5s;
-	animation-delay: 0.5s;
+	animation-delay: 1s;
 	animation-fill-mode: backwards;
 }
 .alertStyle
@@ -231,7 +233,7 @@ body
 	display: inline-block;
 	animation-name:alertIn;
 	animation-duration:0.5s;
-	animation-delay: 1s;
+	animation-delay: 1.5s;
 	animation-fill-mode: backwards;
 }
 #announcementCanvas
@@ -246,6 +248,9 @@ body
 	text-align: right;
 	font-family: VT323;
 	font-size: 24px;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .announcementText
 {
@@ -257,7 +262,7 @@ body
 
 	animation-name:alertIn;
 	animation-duration:0.5s;
-	animation-delay: 0.5s;
+	animation-delay: 1s;
 	animation-fill-mode: backwards;
 }
 .announcementStyle
@@ -265,7 +270,7 @@ body
 	display: inline-block;
 	animation-name:alertIn;
 	animation-duration:0.5s;
-	animation-delay: 1s;
+	animation-delay: 1.5s;
 	animation-fill-mode: backwards;
 }
 

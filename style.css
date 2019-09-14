@@ -162,7 +162,7 @@ body
 	width: 100px;
 	height:100px;
 	background: white;
-	background-image: url("https://source.unsplash.com/featured/?pizza");
+	background-image: url("img/me.jpg");
 	background-size: cover;
 	border-radius: 10px;
 }
@@ -178,6 +178,14 @@ body
 	text-align: left;
 	background:white;
 	margin-top: 48px;
+	display:flex;
+	align-items: center;
+}
+.cursorBlink
+{
+	animation-name:fadeIn;
+	animation-duration:1s;
+	animation-iteration-count: infinite;
 }
 .loginButtonContainer
 {
@@ -186,7 +194,9 @@ body
 }
 .loginButton
 {
-	display: inline;
+	height: 48px;
+	line-height: 48px;
+	display: inline-block;
 	padding: 0 24px;
 	background:#2ecc71;
 }

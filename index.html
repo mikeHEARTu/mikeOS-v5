@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Live breakscreen for Twitch.tv/aznmike123">
+	<meta name="keywords" content="twitch, overlay">
+	<meta name="author" content="Michael Macasiano">
+	<title>Video games are awful</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<script>
+	function startTime() {
+		var today = new Date();
+		var h = today.getHours();
+		var m = today.getMinutes();
+
+		m = checkTime(m);
+
+		document.getElementById('timeHours').innerHTML = h;
+		document.getElementById('timeMinutes').innerHTML = m;
+
+		var t = setTimeout(startTime, 500);
+	}
+	function checkTime(i) {
+		if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		return i;
+	}
+	function UTCplusOne(i) {
+		i++;
+		if (i > 23) {i = 0};
+		return i;
+	}
+	function ordinal_suffix_of(i) {
+		var j = i % 10,
+			k = i % 100;
+		if (j == 1 && k != 11) {
+			return i + "st";
+		}
+		if (j == 2 && k != 12) {
+			return i + "nd";
+		}
+		if (j == 3 && k != 13) {
+			return i + "rd";
+		}
+		return i + "th";
+	}
+</script>
+
+<body onload="startTime()">
+	<div id="streamCanvas">
+		<div id="topBar">
+			<div class="topBarBlock">
+				mikeOS.v5
+			</div>
+			<div class="topBarBlock">
+				img/unsplash.png
+			</div>
+			<div class="topBarBlock">
+				<span id="timeHours"></span>
+				<span class="clockTicker">:</span>
+				<span id="timeMinutes"></span>
+			</div>
+		</div>
+
+		<div class="window unsplash">
+			
+		</div>
+	</div>
+</body>
+
+</html>

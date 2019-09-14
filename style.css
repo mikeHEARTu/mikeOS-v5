@@ -57,6 +57,13 @@ body
 .window
 {
 	border-radius: 10px;
+	overflow:hidden;
+	background:white;
+}
+.windowTop
+{
+	height: 72px;
+	background: #2ecc71;
 }
 .unsplash
 {
@@ -65,7 +72,7 @@ body
 	left:48px;
 	width: 480px;
 	height: 320px;
-	background:white;
+	
 	background-image: url("img/irina-iriser-mNz9Pa3tz34-unsplash.jpg");
 	background-image: url("https://source.unsplash.com/featured/?fun");
 	background-size: cover;
@@ -74,6 +81,30 @@ body
 	animation-duration:0.5s;
 	animation-delay: 1.5s;
 	animation-fill-mode: backwards;
+}
+.textBox
+{
+	position: absolute;
+	top:443px;
+	left:230px;
+	display: inline-block;
+	text-align: left;
+
+	animation-name:fadeIn;
+	animation-duration:0.5s;
+	animation-delay: 2s;
+	animation-fill-mode: backwards;
+}
+.textContainer
+{
+	padding:48px;
+	display: flex;
+	flex-direction: row;
+}
+.textLeft
+{
+	color:#bdc3c7;
+	padding-right:24px;
 }
 
 @keyframes fadeIn

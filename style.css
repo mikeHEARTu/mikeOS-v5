@@ -74,7 +74,7 @@ body
 	height: 320px;
 	
 	background-image: url("img/irina-iriser-mNz9Pa3tz34-unsplash.jpg");
-	/* background-image: url("https://source.unsplash.com/featured/?fun"); */
+	background-image: url("https://source.unsplash.com/featured/?fun");
 	background-size: cover;
 
 	animation-name:scaleIn;

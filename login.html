@@ -50,18 +50,9 @@
 
 <body onload="startTime()">
 	<div id="streamCanvas">
-		<div class="topBar">
+		<div class="topBar empty">
 			<div class="topBarBlock">
-				img/unsplash.png
-			</div>
-			<div class="topBarBlock">
-				doc/update.txt
-			</div>
-			<div class="topBarBlock">
-				img/humble.png
-			</div>
-			<div class="topBarBlock">
-				vid/nowplaying.mp4
+				mikeOS.v5
 			</div>
 			<div class="topBarBlock">
 				<span id="timeHours"></span>
@@ -70,38 +61,22 @@
 			</div>
 		</div>
 
-		<div class="window unsplash"></div>
-
-		<div class="window textBox">
-			<div class="windowTop"></div>
-			<div class="textContainer">
-				<div class="textLeft">
-					1:<br>
-					2:<br>
-					3:<br>
-					4:<br>
-					5:<br>
-					6:<br>
-					7:<br>
+		<div class="loginFlex">
+			<div class="loginContainer">
+				<div class="userInfo">
+					<div class="userPic"></div>
+					<div class="userName">aznmike123</div>
 				</div>
-				<div class="textRight">
-					Be right back!<br>
-					<br>
-					Tell your friends to tune in at<br>
-					VideoGamesAreAwful.com<br>
-					<br>
-					Also, follow me on Twitter<br>
-					@mikeHEARTu
+				<div class="userPassword">
+					********
+				</div>
+				<div class="loginButtonContainer">
+					<div class="loginButton">
+						start stream >>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<video autoplay muted loop width="720" class="window" id="nowPlayingVideo">
-			<!-- <source src="img/steambirds-alliance-gameplay.mp4" type="video/mp4"> -->
-			<source src="img/brokchrd.webm" type="video/webm">
-		</video>
-
-		<div class="window humble"></div>
 	</div>
 </body>
 

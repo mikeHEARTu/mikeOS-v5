@@ -23,7 +23,7 @@ body
 	animation-delay: 0.5s;
 	animation-fill-mode: backwards;
 }
-#topBar
+.topBar
 {
 	background:white;
 	position: absolute;
@@ -132,6 +132,62 @@ body
 	animation-duration:0.5s;
 	animation-delay: 2s;
 	animation-fill-mode: backwards;
+}
+.empty
+{
+	background: transparent;
+}
+.loginFlex
+{
+	width: 100%;
+	height:100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loginContainer
+{
+	display: flex;
+	flex-direction: column;
+}
+.userInfo
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.userPic
+{
+	width: 100px;
+	height:100px;
+	background: white;
+	background-image: url("https://source.unsplash.com/featured/?pizza");
+	background-size: cover;
+	border-radius: 10px;
+}
+.userName
+{
+	margin-left:48px;
+}
+.userPassword
+{
+	width:404px;
+	padding:0 24px;
+	text-align: left;
+	background:white;
+	margin-top: 48px;
+}
+.loginButtonContainer
+{
+	margin-top: 48px;
+	text-align:right;
+}
+.loginButton
+{
+	display: inline;
+	padding: 0 24px;
+	background:#2ecc71;
 }
 
 @keyframes fadeIn

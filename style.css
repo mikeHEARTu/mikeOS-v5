@@ -70,12 +70,12 @@ body
 	position: absolute;
 	top:213px;
 	left:48px;
-	width: 480px;
+
+	/* width: 480px;
 	height: 320px;
-	
 	background-image: url("img/irina-iriser-mNz9Pa3tz34-unsplash.jpg");
 	background-image: url("https://source.unsplash.com/featured/?fun");
-	background-size: cover;
+	background-size: cover; */
 
 	animation-name:scaleIn;
 	animation-duration:0.5s;
@@ -125,7 +125,7 @@ body
 	width: 338px;
 	height: 338px;
 
-	background-image: url("img/oct2019-monthly-partner-v2.png");
+	background-image: url("img/nov2019-monthly-partner-all-v2.png");
 	background-size: cover;
 
 	animation-name:scaleIn;

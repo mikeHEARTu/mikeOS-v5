@@ -244,10 +244,12 @@ body
 	width: 100%;
 	height:100%;
 	background:#00b894;
-	background-image: url("img/outer-space-patterns-4.jpg");
+	/* background-image: url("img/outer-space-patterns-4.jpg");
 	background-position: center center;
 	background-size: contain;
-	background-repeat: repeat;
+	background-repeat: repeat; */
+	background-image: url("https://source.unsplash.com/featured/?wallpaper");
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -236,7 +236,7 @@ body
 	animation-delay: 11s;
 	animation-fill-mode: forwards; */
 
-	animation: alertIn 0.5s 1s backwards, alertOut 0.5s 4s forwards;
+	animation: alertIn 0.5s 3s backwards, alertOut 0.5s 7s forwards;
 }
 .alertStyle
 {
@@ -251,7 +251,7 @@ body
 	animation-delay: 10.5s;
 	animation-fill-mode: forwards; */
 
-	animation: alertIn 0.5s 1.5s backwards, alertOut 0.5s 3.5s forwards;
+	animation: alertIn 0.5s 3.5s backwards, alertOut 0.5s 6.5s forwards;
 }
 .breakCanvas
 {
@@ -289,6 +289,17 @@ body
 	animation-duration:0.5s;
 	animation-delay: 1s;
 	animation-fill-mode: backwards;
+}
+.mySlides
+{
+	display:none;
+}
+.slideLogo
+{
+	position:absolute;
+	right:10px;
+	top:10px;
+	animation: alertIn 0.5s 0.5s backwards, alertOut 0.5s 2.5s forwards;
 }
 
 @keyframes fadeIn

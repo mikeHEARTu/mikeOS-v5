@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Live breakscreen for Twitch.tv/aznmike123">
+	<meta name="keywords" content="twitch, overlay">
+	<meta name="author" content="Michael Macasiano">
+	<title>Video games are awful</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="alertCanvas" class="mySlides">
+		<div class="alertText">
+			<div class="alertStyle">
+				@mikeheartu - Twitter
+			</div>
+		</div>
+
+		<img src="img/sub-badges-1y-36px.png" class="slideLogo">
+	</div>
+
+	<div id="alertCanvas" class="mySlides">
+		<div class="alertText">
+			<div class="alertStyle">
+				@mikeheartu - Instagram
+			</div>
+		</div>
+
+		<img src="img/sub-badges-1y-36px.png" class="slideLogo">
+	</div>
+
+	<script>
+		var slideIndex = 0;
+		carousel();
+
+		function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > x.length) {slideIndex = 1}
+		x[slideIndex-1].style.display = "block";
+		setTimeout(carousel, 8000); // Change image every 8 seconds
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Live breakscreen for Twitch.tv/aznmike123">
+	<meta name="keywords" content="twitch, overlay">
+	<meta name="author" content="Michael Macasiano">
+	<title>Video games are awful</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a245c13cca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="webcamCanvas">
+		<div class="webcamText mySlides"><i class="faStyle faName fas fa-pizza-slice"></i> Michael</div>
+		<div class="webcamText mySlides"><i class="faStyle faTwitter fab fa-twitter"></i> @mikeHEARTu</div>
+		<div class="webcamText mySlides"><i class="faStyle faTwitch fab fa-twitch"></i> /aznmike</div>
+	</div>
+
+	<script>
+		var slideIndex = 0;
+		carousel();
+
+		function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > x.length) {slideIndex = 1}
+		x[slideIndex-1].style.display = "block";
+		setTimeout(carousel, 20000); // Change image every 20 seconds
+		}
+	</script>
+</body>
+
+</html>
